@@ -1,12 +1,13 @@
 {% extends "base_detail.html" %}
 {% block content %}
 <div>
-    <h3>{{ subscription.name }}</h3>
+    <h3><strong>{{ subscription.name }}</strong></h3>
+    <h4>{{ subscription.plan }}</h4>
     <p>{{ subscription.category }}</p>
     <p>{{ subscription.subcategory }}</p>
-    <p>{{ subscription.plan }}</p>
     <p>{{ subscription.price }}</p>
-    <p>{{ subscription.primary_cancellation }}</p>
-    <p>{{ subscription.secondary_cancellation }}</p>
+    <p class="steps" >{{ subscription.steps }}</p>
+    <p><strong>Start Here:</strong> {{ subscription.primary_cancellation }}</p>
+    <p><strong>For More Information:</strong> {{ subscription.secondary_cancellation }}</p>
 </div>
 {% endblock %}

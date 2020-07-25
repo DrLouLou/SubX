@@ -1,9 +1,39 @@
 {% load static %}
-<html lang="en-US">
+<html lang="en-GB">
     <head>
         <meta charset="UTF-8">
         <title>Home - SubX</title>
-        <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}" type="text/css" media="all">
+        <link rel="stylesheet" id="ample-style-css" href="static/style.css" type="text/css" media="all">
+        <style>
+            .search-bar {
+                width: 75%;
+            }
+
+            .search-form {
+                margin-left: 15%;
+            }
+
+            .summary {
+                display: flex;
+                text-align: justify;
+                width: 60%;
+                margin-left: 21%;
+                margin-top: 4%;
+            }
+
+            .summary-text {
+                line-height: 2.5;
+            }
+
+            .footer {
+                padding: 30px 0 20px;
+            }
+
+            .creator {
+                margin-left: 87%;
+                margin-top: 2%;
+            }
+        </style>
     </head>
     <body class="wide">
         <div id="page" class="hfeed site">
@@ -11,9 +41,9 @@
                 <div class="header">
                     <div class="main-head-wrap inner-wrap clearfix">
                         <div id="header-logo-image">
-                            <a href="/">
+                            <div class="background">
                                 <img src="https://cdn.pixabay.com/photo/2017/02/18/19/20/logo-2078018_1280.png" alt="SubX logo">
-                            </a>
+                            </div>
                         </div>
                         <div id="header-text">
                             <h1 id="site-title">
@@ -21,14 +51,21 @@
                             </h1>
                             <p>Cancel anytime.</p>
                         </div>
+                        <p class="creator" >By Louis Choo-Choy</p>
                     </div>
                     <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="SubX">
                 </div>
             </header>
             <div class="main-wrapper">
+                <div class="summary">
+                    <p class="summary-text">SubX provides all the information you need to cancel payments to all the most popular subscriptions. Our team is constantly trying to find new ways to make your experience run more smoothly. For this reason, we are continually adding to our database of subscriptions. For more information on each individual cancellation, search the service in question and click on your payment plan. We hope you find what you're looking for!</p>
+                </div>
                 <div class="single-page clearfix">
                     <div class="inner-wrap">
-                        <p>SubX strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of health conditions in companion animals, including dogs, cats, birds, reptiles, rodents, and fish. We apply the latest healthcare technology, along with the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest and most effective treatments and cures, while maintaining a caring relationship with our patients and their guardians.</p>
+                        <form class="search-form" action="{% url 'home' %}">
+                            <input class="search-bar" type="search" name="search" placeholder="Search">
+                            <button type="submit">Search</button>
+                        </form>
                         <hr>
                         <div>
                          {% block content %}
@@ -37,12 +74,13 @@
                     </div>
                 </div>
             </div>
-            <footer id="colophon">
+            <footer class="footer" id="colophon">
                 <div class="inner-wrap">
                     SubX is a fictitious brand created by Louis Choo-Choy, solely for the purpose of training. Any resemblance to real brands, products, or people is purely coincidental.
                 </div>
             </footer>
         </div>
-        <script src="{% static 'main.js' %}"></script>
+        <script src="{% static 'main.js' %} ">
+        </script>
     </body>
 </html>

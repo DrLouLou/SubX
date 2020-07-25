@@ -4,13 +4,16 @@
     {% for subscription in subscriptions %}
     <div class="subscription-name">
         <a href="{% url 'subscription_detail' subscription.id %}">
-            <h3>{{subscription.name}}</h3>
+            <span>
+                <h3><strong>{{subscription.name}}</strong></h3>
+                {% if subscription.plan %}
+                    <p>Plan: {{subscription.plan}}</p>
+                {% endif %}
+            </span>   
         </a>
         <p>Category: {{ subscription.category}}</p>
-        {% if subscription.plan %}
-            <p>Plan: {{subscription.plan}}</p>
-        {% endif %}
     </div>
     {% endfor %}
 </div>
+
 {% endblock %}

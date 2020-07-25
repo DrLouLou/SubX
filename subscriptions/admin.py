@@ -3,4 +3,5 @@ from .models import Subscription
 
 @admin.register(Subscription)
 class SubscriptionAdmin(admin.ModelAdmin):
-    pass
+    search_fields = ('name', 'plan', '=id')
+    # pass

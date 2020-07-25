@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 class Subscription(models.Model):
     name = models.CharField(max_length=100, null=False)
     plan = models.CharField(max_length=100, null=True)
