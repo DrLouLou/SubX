@@ -88,6 +88,12 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': env.db(),
+# }
+
+# DATABASE_URL=mysql://subxadmin:%23shalhoub@127.0.0.1:3306/SubX
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -133,3 +139,5 @@ STATICFILES_DIRS = [
 # List of directories that django will look in for serving static assets.
 
 django_heroku.settings(locals())
+
+# mysql://bd539c34bead5d:1786b13e@eu-cdbr-west-03.cleardb.net/heroku_57f6a634fefe89a?reconnect=true

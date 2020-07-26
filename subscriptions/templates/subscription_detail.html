@@ -2,9 +2,11 @@
 {% block content %}
 <div>
     <h3><strong>{{ subscription.name }}</strong></h3>
-    <h4>{{ subscription.plan }}</h4>
-    <p>{{ subscription.category }}</p>
-    <p>{{ subscription.subcategory }}</p>
+    <h4>Plan: {{ subscription.plan }}</h4>
+    <p>Category: {{ subscription.category }}</p>
+    {% if subscription.subcategory %}
+        <p>Subcategory: {{ subscription.subcategory }}</p>
+    {% endif %}
     <p>{{ subscription.price }}</p>
     <p class="steps" >{{ subscription.steps }}</p>
     <p><strong>Start Here:</strong> {{ subscription.primary_cancellation }}</p>
