@@ -1,1 +1,1 @@
-web: gunicorn subx.wsgi
+web: gunicorn SubX.wsgi
