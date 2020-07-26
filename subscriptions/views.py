@@ -14,7 +14,7 @@ def home(request):
         subscriptions = Subscription.objects.filter(name__icontains=search_query)
     else:
         subscriptions = Subscription.objects.all()
-        
+
     return render(request, 'home.html', {
         'subscriptions': subscriptions,
     })
@@ -27,8 +27,3 @@ def subscription_detail(request, subscription_id):
     return render(request, 'subscription_detail.html', {
         'subscription': subscription,
     })
-
-# subscriptions = Subscription.objects.all()
-# return render(request, 'home.html', {
-#         'subscriptions': subscriptions,
-#     })

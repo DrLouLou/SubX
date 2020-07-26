@@ -1,73 +1,6 @@
-/*
-Theme Name: Ample
-Theme URI: https://themegrill.com/themes/ample/
-Author: ThemeGrill
-Author URI: https://themegrill.com
-Description: Ample is a multipurpose responsive WordPress theme made to help you create a beautiful professional looking site in no time. It has numerous built-in options to give your site the look that you want. Get free support at https://themegrill.com/support-forum/ and check the demo at https://demo.themegrill.com/ample/
-Version: 1.1.7
-License: GNU General Public License, version 3 (GPLv3)
-License URI: http://www.gnu.org/licenses/gpl-3.0.txt
-Tags: one-column, two-columns, right-sidebar, left-sidebar, custom-header, custom-background, custom-menu, custom-colors, threaded-comments, translation-ready, featured-images, theme-options, blog, e-commerce
-Text Domain: ample
-*/
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 Reset
-2.0 Typography
-		2.1 Headings
-		2.2 Others
-3.0 Elements
-		3.1 Superscript and Subscript
-		3.2 Table
-		3.3 Lists
-		3.4 Blockquote
-		3.5 Others
-4.0 Forms
-5.0 Navigation
-		5.1 Links
-		5.2 Primary Menu
-		5.3 Primary Menu Dropdown
-		5.4 Responsive Menu
-6.0 Images
-7.0 Alignments
-8.0 Clearings
-9.0 Media
-		9.1 Captions
-		9.2 WordPress Gallery Support
-10.0 Extras
-		10.1 Featured Slider
-		10.2 Search Design
-		10.3 Page Header Title
-11.0 Widgets
-		11.1 Widgets General CSS
-		11.2 Services Widget
-		11.3 Call to Action Widget
-		11.4 Featured Posts Widget
-		11.5 Portfolio Widget
-12.0 Plugins Support
-		12.1 Breadcrumb NavXT
-		12.2 WP-PageNavi
-13.0 Content
-		13.1 Body
-		13.2 Header
-		13.3 Primary, Secondary & Tertiary Content Area
-		13.4 Content Columns
-		13.5 Posts and Pages
-		13.6 Pagination
-		13.7 Comments
-		13.8 Footer
-				13.8.a Footer General CSS
-				13.8.b Footer Widget Area
-				13.8.c Footer Copyright Info
-				13.8.d Footer menu
-				13.8.e Scroll to Top
-14.0 Responsive Structure
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-1.0 Reset
+Reset
 --------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -88,11 +21,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 	flex: 1;
 }
-html {
-	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
-	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-}
+
 article,
 aside,
 details,
@@ -128,13 +57,6 @@ button::-moz-focus-inner {
 	margin: 0;
 }
 
-/*--------------------------------------------------------------
-2.0 Typography
---------------------------------------------------------------*/
-
-/*
-====> 2.1 Headings
---------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
 	color: #666666;
 	line-height: 1.4;
@@ -148,9 +70,6 @@ h4 { font-size: 24px; }
 h5 { font-size: 22px; }
 h6 { font-size: 19px; }
 
-/*
-====> 2.2 Others
---------------------------------------------------------------*/
 body,
 button,
 input,
@@ -170,13 +89,6 @@ p {
 	font-weight: 300;
 }
 
-/*--------------------------------------------------------------
-3.0 Elements
---------------------------------------------------------------*/
-
-/*
-====> 3.1 Superscript and Subscript
---------------------------------------------------------------*/
 sup, sub {
 	font-size: 10px;
 	height: 0;
@@ -191,29 +103,6 @@ sub {
 	top: .5ex;
 }
 
-/*
-====> 3.2 Table
---------------------------------------------------------------*/
-table { /* tables still need 'cellspacing="0"' in the markup */
-	border-collapse: collapse;
-	border-spacing: 0;
-	margin: 0 0 1.5em;
-	width: 100%;
-}
-th {
-	font-weight: bold;
-}
-th, td {
-	border: 1px solid #f2f2f2;
-	padding: 6px 10px;
-}
-caption, th, td {
-	text-align: left;
-}
-
-/*
-====> 3.3 Lists
---------------------------------------------------------------*/
 ul, ol {
 	list-style: none;
 }
@@ -225,9 +114,6 @@ li > ol {
 	margin: 0 0 0 20px;
 }
 
-/*
-====> 3.4 Blockquote
---------------------------------------------------------------*/
 blockquote {
 	font-style: italic;
 	font-weight: normal;
@@ -247,9 +133,6 @@ blockquote cite {
 	text-transform: uppercase;
 }
 
-/*
-====> 3.5 Others
---------------------------------------------------------------*/
 body {
 	background: #f2f2f2; /* Fallback for when there is no custom background color defined. */
 }
@@ -308,12 +191,6 @@ dd {
     display: none;
 }
 
-/*--------------------------------------------------------------
-4.0 Forms
---------------------------------------------------------------*/
-input, textarea {
-	-webkit-border-radius: 0px;
-}
 input[type="text"],
 input[type="url"],
 input[type="email"],
@@ -385,13 +262,6 @@ button:hover {
 	box-shadow:0 0 2px rgba(0, 0, 0, 0.6);
 }
 
-/*--------------------------------------------------------------
-5.0 Navigation
---------------------------------------------------------------*/
-
-/*
-====> 5.1 Links
---------------------------------------------------------------*/
 a {
 	color: #80abc8;
 	text-decoration: none;
@@ -405,9 +275,6 @@ a:focus, a:active, a:hover {
 	text-decoration: none;
 }
 
-/*
-====> 5.2 Primary Menu
---------------------------------------------------------------*/
 .main-navigation li > ul,
 .main-navigation li > ol {
 	margin: 0;
@@ -425,8 +292,7 @@ a:focus, a:active, a:hover {
 .sub-toggle{
 	display: none;
 }
-.main-navigation ul > li {
-}
+
 .main-navigation ul#menu-primary > li:last-child {
 	margin-right: 15px;
 }
@@ -495,9 +361,6 @@ li.default-menu {
 	right: 8px;
 }
 
-/*
-====> 5.3 Primary Menu Dropdown
---------------------------------------------------------------*/
 .main-navigation ul li ul,
 .main-navigation ul li:hover ul ul,
 .main-navigation ul ul li:hover ul ul,
@@ -559,17 +422,11 @@ li.default-menu {
 	display: none;
 }
 
-/*
-====> 5.4 Responsive Menu
---------------------------------------------------------------*/
 .menu-toggle {
 	display: none;
 	cursor: pointer;
 }
 
-/*--------------------------------------------------------------
-6.0 Images
---------------------------------------------------------------*/
 figure {
 	margin: 0;
 	text-align: center;
@@ -600,8 +457,7 @@ img.size-full, img.size-large {
 img.alignleft, img.alignright, img.aligncenter {
 	margin-bottom: 1.625em;
 }
-p img {
-}
+
 a img {
 	border: 0;
 }
@@ -614,29 +470,6 @@ img#wpstats {
 	display: none;
 }
 
-/*--------------------------------------------------------------
-7.0 Alignments
---------------------------------------------------------------*/
-.alignleft {
-	display: inline;
-	float: left;
-	margin-right: 30px;
-}
-.alignright {
-	display: inline;
-	float: right;
-	margin-left: 30px;
-}
-.aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/*--------------------------------------------------------------
-8.0 Clearings
---------------------------------------------------------------*/
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -661,13 +494,6 @@ img#wpstats {
 	clear: both;
 }
 
-/*--------------------------------------------------------------
-9.0 Media
---------------------------------------------------------------*/
-
-/*
-====> 9.1 Captions
---------------------------------------------------------------*/
 .wp-caption {
 	border: 1px solid #ccc;
 	margin-bottom: 1.5rem;
@@ -684,60 +510,7 @@ img#wpstats {
 .wp-caption .wp-caption-text {
 	margin: 0.8075rem 0;
 }
-.gallery-caption {
-}
 
-/*
-====> 9.2 WordPress Gallery Support
---------------------------------------------------------------*/
-.gallery {
-	margin: 0 auto 15px;
-}
-.gallery-item {
-	display: inline-block;
-	padding: 15px 2%;
-	text-align: center;
-	vertical-align: top;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-.gallery-columns-3 .gallery-item,
-.gallery-columns-4 .gallery-item,
-.gallery-columns-5 .gallery-item {
-	padding: 15px 1%;
-}
-.gallery-columns-6 .gallery-item,
-.gallery-columns-7 .gallery-item,
-.gallery-columns-8 .gallery-item,
-.gallery-columns-9 .gallery-item {
-	padding: 10px 0.5%;
-}
-.gallery-columns-2 .gallery-item { width:50%; }
-.gallery-columns-3 .gallery-item { width:33.33%; }
-.gallery-columns-4 .gallery-item { width:25%; }
-.gallery-columns-5 .gallery-item { width:20%; }
-.gallery-columns-6 .gallery-item { width:16.66%; }
-.gallery-columns-7 .gallery-item { width:14.28%; }
-.gallery-columns-8 .gallery-item { width:12.5%; }
-.gallery-columns-9 .gallery-item { width:11.11%; }
-.gallery-icon img {
-	margin: 0 auto;
-}
-.gallery .gallery-caption {
-	font-size: 12px;
-	line-height: 1.2;
-	padding-top: 5px;
-}
-
-/*--------------------------------------------------------------
-10.0 Extras
---------------------------------------------------------------*/
-
-/*
-====> 10.1 Featured Slider
---------------------------------------------------------------*/
 .big-slider-wrapper{
 	max-width: 1600px;
 	margin: 0 auto;
@@ -832,9 +605,6 @@ img#wpstats {
 	display: block;
 }
 
-/*
-====> 10.2 Search Design
---------------------------------------------------------------*/
 #masthead .search-wrap input.s {
 	width: 180px;
 }
@@ -884,146 +654,6 @@ img#wpstats {
 	 right: 175px;
 }
 
-/*
-====> 10.3 Page Header Title
---------------------------------------------------------------*/
-.header-post-title-container {
-	padding: 40px 0;
-	background-color: #80abc8;
-	border-bottom: 1px solid #f2f2f2;
-}
-.header-post-title-container .post-title-wrapper {
-	float: left;
-	max-width: 100%;
-	padding-right: 30px;
-}
-.header-post-title-class {
-	font-size: 24px;
-	padding-bottom: 0;
-	color: #ffffff;
-}
-
-/*--------------------------------------------------------------
-11.0 Widgets
---------------------------------------------------------------*/
-
-/*
-====> 11.1 Widgets General CSS
---------------------------------------------------------------*/
-.business-template .main-wrapper .widget {
-	background-color: #ffffff;
-}
-.business-template .widget.widget_call_to_action_block,
-.business-template .widget.widget_portfolio_block {
-	background-color: transparent;
-}
-.business-template .widget.widget_call_to_action_block > .inner-wrap,
-.business-template .widget.widget_portfolio_block > .inner-wrap {
-	max-width: 100%;
-}
-#secondary .widget,
-#tertiary .widget {
-	 padding-bottom: 40px;
-}
-#secondary .widget-title,
-#tertiary .widget-title {
-	font-size: 24px;
-}
-#secondary .widget li a,
-#tertiary .widget li a {
-	padding-bottom: 10px;
-	display: inline-block;
-	color: #80abc8;
-}
-#secondary .widget li a:hover,
-#tertiary .widget li a:hover {
-	text-decoration: underline;
-}
-.widget select {
-	max-width: 100%;
-}
-#secondary .search-wrap button,
-#tertiary .search-wrap button {
-	right: 26px;
-}
-.both-sidebar #secondary .search-wrap button,
-.both-sidebar #tertiary .search-wrap button {
-	right: 0;
-}
-
-/*
-====> 11.2 Services Widget
---------------------------------------------------------------*/
-.widget.widget_service_block {
-	padding: 60px 0;
-}
-.widget_service_block .services-main-description img {
-	padding-bottom: 40px;
-}
-.widget_service_block h3.widget-title {
-	text-align: center;
-	text-transform: uppercase;
-	padding-bottom: 0;
-}
-.widget_service_block h5 a {
-	color: #666666;
-}
-.widget_service_block h5 a:hover {
-	color: #80abc8;
-}
-.widget_service_block h3.widget-title:after {
-	background: none repeat scroll 0 0 #ccc;
-	content: "";
-	display: block;
-	height: 2px;
-	margin: 20px auto;
-	width: 100px;
-}
-.widget_service_block .services-main-description p {
-	padding-bottom: 50px;
-	margin-bottom: 0;
-}
-.services-header{text-align: center;}
-.services-header h2{
-	text-transform: uppercase;
-	border-bottom: 4px solid #80abc8;
-	display: inline;
-	padding-bottom: 10px;
-}
-.single-service{
-	text-align: center;
-}
-.single-service:hover .icons {
-	background-color: #80abc8;
-}
-.single-service:hover .icons i {
-	color: #ffffff;
-}
-.single-service h5{
-	padding: 20px 0;
-	font-size: 20px;
-}
-.single-service span.icons{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	border: 2px solid #f8f8f8;
-	display: block;
-	position: relative;
-	margin: 0 auto;
-}
-.single-service span i{
-	font-size: 36px;
-	line-height: 102px;
-	margin: 0;
-	color: #80abc8;
-}
-
-/*
-====> 11.3 Call to Action Widget
---------------------------------------------------------------*/
-.business-template .widget.widget_call_to_action_block {
-}
 .business-template .widget.widget_call_to_action_block .call-to-action-content-wrapper {
 	padding: 100px 0;
 }
@@ -1051,9 +681,6 @@ img#wpstats {
 	color: #ffffff;
 }
 
-/*
-====> 11.4 Featured Posts Widget
---------------------------------------------------------------*/
 .featured-posts-header .widget-title {
 	text-align: center;
 	line-height: 28px;
@@ -1106,107 +733,6 @@ img#wpstats {
 .single-post-content .entry-title a{color: #666666;}
 .single-post-content .entry-title a:hover{color: #80abc8;}
 
-/*
-====> 11.5 Portfolio Widget
---------------------------------------------------------------*/
-.widget_portfolio_block {
-}
-.widget_portfolio_block .tg-column-odd,
-.widget_portfolio_block .tg-column-even {
-	margin-bottom: 25px;
-	text-align: center;
-}
-.widget_portfolio_block .tg-one-fourth {
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-}
-.portfolio-container {
-	background-color: transparent;
-	padding: 80px 0;
-}
-.portfolio-container img {
-	margin-bottom: 0;
-}
-.widget_portfolio_block h3.widget-title {
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
-	padding-bottom: 0;
-}
-.widget_portfolio_block h3.widget-title:after {
-	background: none repeat scroll 0 0 #ccc;
-	content: "";
-	display: block;
-	height: 2px;
-	margin: 20px auto;
-	width: 100px;
-}
-.portfolio-main-description {
-	text-align: center;
-	padding-bottom: 50px;
-}
-.portfolio-main-description p {
-	color: #ffffff;
-}
-.moving-box{
-	position: absolute;
-	bottom: -80px;
-	left: 0;
-	right: 0;
-	-webkit-transition: 0.25s ease-in-out;
-	-moz-transition: 0.25s ease-in-out;
-	transition: 0.25s ease-in-out;
-	-ms-transition: 0.25s ease-in-out;
-	-o-transition: 0.25s ease-in-out;
-}
-.moving-box a{
-	color: #fff !important;
-	display: block;
-	background-color: #80abc8;
-	padding: 15px 5px;
-	text-align: center;
-}
-.view-detail a {
-	height: 58px;
-	width: 58px;
-	display: block;
-	position: absolute;
-	top: -70px;
-	z-index: 1;
-	left: 0;
-	right: 0;
-	margin: auto;
-	text-align: center;
-}
-.portfolio-container .tg-one-fourth:hover .view-detail a{top: 70px; }
-.fa.fa-link {
-	font-size: 40px;
-	line-height: 58px;
-}
-.portfolio-view-more {
-	text-align: center;
-}
-.portfolio-button {
-	display: inline-block;
-	color: #ffffff;
-	font-size: 16px;
-	padding: 18px 20px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	border: 1px solid #ffffff;
-	margin-top: 40px;
-}
-.portfolio-button:hover{ background: rgba(255, 255, 255, 0.26);}
-.portfolio-container .tg-one-fourth {position: relative; float:left;}
-.portfolio-container .tg-one-fourth:hover .moving-box{bottom: 0;}
-.portfolio-container .tg-one-fourth .single-portfolio-thumbnail{position: relative; padding:0; overflow: hidden;}
-
-/*--------------------------------------------------------------
-12.0 Plugins Support
---------------------------------------------------------------*/
-
-/*
-====> 12.1 Breadcrumb NavXT
---------------------------------------------------------------*/
 .breadcrumb {
 	float: right;
 	text-align: right;
@@ -1226,20 +752,10 @@ img#wpstats {
 	text-decoration: underline;
 }
 
-/*
-====> 12.2 WP-PageNavi
---------------------------------------------------------------*/
 .wp-pagenavi {
 	padding-bottom: 40px;
 }
 
-/*--------------------------------------------------------------
-13.0 Content
---------------------------------------------------------------*/
-
-/*
-====> 13.1 Body
---------------------------------------------------------------*/
 body {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -1265,9 +781,6 @@ body.wide {
 	margin: 0 auto;
 }
 
-/*
-====> 13.2 Header
---------------------------------------------------------------*/
 .business-template #masthead {
 	background-color: #ffffff;
 }
@@ -1323,10 +836,6 @@ img.header-image {
 	margin: 0 auto;
 }
 
-/*
-====> 13.3 Primary, Secondary & Tertiary Content Area
---------------------------------------------------------------*/
-
 /* Right Sidebar */
 #primary {
 	float: left;
@@ -1372,10 +881,6 @@ img.header-image {
 	margin: 0 auto;
 }
 
-/*
-====> 13.4 Content Columns
---------------------------------------------------------------*/
-
 /* Two Column */
 .tg-one-half {
 	float: left;
@@ -1409,11 +914,6 @@ img.header-image {
 	margin: 0px;
 }
 
-/*
-====> 13.5 Posts and pages
---------------------------------------------------------------*/
-.sticky {
-}
 .extra-hatom-entry-title {
 	display: none;
 }
@@ -1427,10 +927,7 @@ img.header-image {
 	font-weight: 200;
 	margin-bottom: 16px;
 }
-#content,#content{
-}
-.sidebar {
-}
+
 .single-page p a{color: #80abc8;}
 .single-page p a:hover{color: #555;}
 .single-page p {
@@ -1504,10 +1001,6 @@ article.post {
 	display: inline-block;
 }
 
-/*
-====> 13.6 Pagination
---------------------------------------------------------------*/
-
 .default-wp-page li.previous {
   float: left;
 }
@@ -1551,151 +1044,10 @@ article.post {
 	text-decoration: underline;
 }
 
-/*
-====> 13.7 Comments
---------------------------------------------------------------*/
-#comments {
-	border-top: 1px solid #F8F8F8;
-	padding-top: 15px;
-}
-#comments i {
-	font-size: 12px;
-	color: #80abc8;
-	padding-right: 10px;
-	line-height: 1.5;
-}
-#comments img {
-	margin-bottom: 5px;
-}
-.comments-title {
-	font-size: 22px;
-	line-height: 28px;
-}
-.comment-content a {
-	word-wrap: break-word;
-}
-.comment-navigation {
-	margin-bottom: 15px;
-}
-.bypostauthor {
-}
-#comments h2.comments-title,
-#comments h3.comments-title {
-	margin-bottom: 10px;
-}
-.avatar {
-	border-radius: 50%;
-	float: left;
-}
-.comments-area article header {
-	margin: 0 0 5px;
-	overflow: hidden;
-	position: relative;
-}
-.comments-area .comment-edit-link,
-.comments-area .comment-permalink,
-.comments-area .comment-date-time,
-.comments-area .comment-author-link {
-	display: block;
-	margin-left: 100px;
-	color: #999999;
-	font-size: 14px;
-}
-.comments-area article header cite a:hover,
-.comments-area a.comment-edit-link:hover,
-.comments-area a.comment-permalink:hover {
-	color: #80abc8;
-}
-.comments-area .comment-author-link a {
-	color: #999999;
-}
-.comments-area .comment-author-link a:hover {
-	color: #80abc8;
-}
-.comments-area .comment-author-link span {
-	margin-left: 10px;
-	padding: 0 5px;
-	background-color: #80abc8;
-	color: #FFFFFF;
-	border-radius: 3px;
-}
-.comments-area article header .comment-edit-link:before{
-	content: "\f044";
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	text-decoration: inherit;
-	color: #80abc8;
-	font-size: 12px;
-	padding-right: 10px;
-}
-.comment-content {
-	padding: 15px 15px 25px;
-	background-color: #F8F8F8;
-	border-radius: 2px;
-}
-li.comment {
-	margin-bottom: 20px;
-	width: 100%;
-}
-.comment ul, .comment ol {
-	margin: 0 0 20px 20px;
-}
-.comment ul {
-	list-style: square outside none;
-}
-.comment .comment-reply-link {
-	float: right;
-	color: #aaaaaa;
-	font-size: 14px;
-}
-.comment .comment-reply-link:before {
-	content: "\f112";
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	text-decoration: inherit;
-	color: #80abc8;
-	font-size: 12px;
-	padding-right: 10px;
-}
-.comment .comment-reply-link:hover {
-	color: #80abc8;
-}
-.comment-list {
-}
-.comment-list, .comment-list .children {
-	list-style-type: none;
-	padding: 0;
-}
-.comment-list .children {
-	margin-left: 40px;
-	padding-top: 20px;
-	margin-bottom: 0;
-}
-#reply-title {
-	font-size: 20px;
-}
-.comment-respond {
-	padding-top: 20px;
-}
-.comment-respond small {
-	float: right;
-}
-.form-allowed-tags {
-	display: none;
-}
 .error404 .page-title {
   font-size: 30px;
 }
 
-/*
-====> 13.8 Footer
---------------------------------------------------------------*/
-
-/*
-====> ====> 13.8.a Footer General CSS
---------------------------------------------------------------*/
 #colophon{
 	font-size: 14px;
 	clear: both;
@@ -1730,11 +1082,6 @@ li.comment {
 	margin-right: 4%;
 }
 
-/*
-====> ====> 13.8.b Footer Widget Area
---------------------------------------------------------------*/
-.footer-widgets-wrapper {
-}
 .footer-widgets-area {
 	padding-bottom: 40px;
 	color: #777777;
@@ -1775,9 +1122,6 @@ li.comment {
 	font-size: 20px;
 }
 
-/*
-====> ====> 13.8.c Footer Copyright Info
---------------------------------------------------------------*/
 .copyright-info {
 	float: left;
 	padding-right: 10px;
@@ -1790,9 +1134,6 @@ li.comment {
 	color: #80abc8;
 }
 
-/*
-====> ====> 13.8.d Footer Menu
---------------------------------------------------------------*/
 .footer-nav {
 	float: right;
 }
@@ -1807,9 +1148,6 @@ li.comment {
 	color: #80abc8;
 }
 
-/*
-====> ====> 13.8.e Scroll to Top
---------------------------------------------------------------*/
 a#scroll-up {
 	bottom: 20px;
 	position: fixed;
@@ -1830,9 +1168,6 @@ a#scroll-up:hover {
 	filter:alpha(opacity=100); /* For IE8 and earlier */
 }
 
-/*--------------------------------------------------------------
-Header media css
---------------------------------------------------------------*/
 .wp-custom-header {
 	 position: relative;
 }
@@ -1874,9 +1209,6 @@ iframe#wp-custom-header-video {
 	 content: '\f04c';
 }
 
-/*--------------------------------------------------------------
-14.0 Responsive Structure
---------------------------------------------------------------*/
 @media screen and (max-width: 1190px) {
 	#page {
 		width: 97%;
@@ -2126,35 +1458,4 @@ iframe#wp-custom-header-video {
 		float: none;
 		width: 100%;
 	}
-}
-
-/* Remove the updated class from entry meta */
-.entry-date .updated {
-  display: none;
-}
-
-/*
-====> ====> WooCommerce CSS
---------------------------------------------------------------*/
-.woocommerce ul.products li.product a img:hover,.woocommerce div.product div.images img:hover{
-	opacity: 1;
-}
-.woocommerce ul.products li.product .price del{
-	display: inline-block;
-	margin-right: 10px;
-}
-.woocommerce ul.products li.product .price ins{
-	text-decoration: none;
-}
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
-  color: #fff;
-}
-.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,
-.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
-  background-color: #1f7732;
-  color: #fff;
-}
-.woocommerce .star-rating span,.woocommerce p.stars a::before {
-  color: #FFD700;
 }
