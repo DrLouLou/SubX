@@ -83,8 +83,8 @@ DATABASES = {
         'NAME': 'SubX',
         'USER': 'subxadmin',
         'PASSWORD': 'shalhoub',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        # 'HOST': 'localhost',
+        # 'PORT': '3306',
     }
 }
 
