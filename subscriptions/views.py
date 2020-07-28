@@ -1,10 +1,10 @@
 from django.shortcuts import render
 # from django.http import HttpResponse
 from django.http import Http404
-from django.db.models import Q
+# from django.db.models import Q
 from .models import Subscription
-from django.core.paginator import Paginator
-from django.views.generic.list import ListView
+# from django.core.paginator import Paginator
+# from django.views.generic.list import ListView
 
 def home(request):
 

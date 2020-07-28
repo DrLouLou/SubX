@@ -1,14 +1,9 @@
 from csv import DictReader
 from datetime import datetime
-
 from django.core.management import BaseCommand
-
-from subscriptions.models import Subscription
-from pytz import UTC
-
-
-DATETIME_FORMAT = '%m/%d/%Y %H:%M'
-
+# from subscriptions.models import Subscription
+from django.apps import apps
+Subscription = apps.get_model('subscriptions', 'Subscription')
 
 class Command(BaseCommand):
     # Show this when the user types help
